@@ -1,0 +1,18 @@
+{% extends 'home.html' %}
+{% block content %}
+<form method="POST">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Title</label>
+      <input type="title" class="form-control" name='title' id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Content</label>
+      <input type="content" class="form-control" name="content" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Slug</label>
+        <input type="slug" class="form-control" name="slug" id="exampleInputPassword1">
+      </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+{% endblock %}
